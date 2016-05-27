@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>R,Rstudio install | Tlory</title>
+  <title>amber skills notices | Tlory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="R源安装最新版以及RStudio">
+  <meta name="description" content="amber MD">
 <meta property="og:type" content="article">
-<meta property="og:title" content="R,Rstudio install">
-<meta property="og:url" content="http://lorybaby.github.io/2016/05/22/R_install_bySource/index.html">
+<meta property="og:title" content="amber skills notices">
+<meta property="og:url" content="http://lorybaby.github.io/2016/05/26/amber/index.html">
 <meta property="og:site_name" content="Tlory">
-<meta property="og:description" content="R源安装最新版以及RStudio">
-<meta property="og:updated_time" content="2016-05-25T02:16:15.574Z">
+<meta property="og:description" content="amber MD">
+<meta property="og:updated_time" content="2016-05-27T13:14:37.568Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="R,Rstudio install">
-<meta name="twitter:description" content="R源安装最新版以及RStudio">
+<meta name="twitter:title" content="amber skills notices">
+<meta name="twitter:description" content="amber MD">
   
     <link rel="alternative" href="/atom.xml" title="Tlory" type="application/atom+xml">
   
@@ -259,11 +259,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-R_install_bySource" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-amber" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/22/R_install_bySource/" class="article-date">
-      <time datetime="2016-05-22T06:41:19.000Z" itemprop="datePublished">2016-05-22</time>
+      <a href="/2016/05/26/amber/" class="article-date">
+      <time datetime="2016-05-26T06:41:19.000Z" itemprop="datePublished">2016-05-26</time>
 </a>
     </div>
   
@@ -276,7 +276,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      R,Rstudio install
+      amber skills notices
     </h1>
   
 
@@ -287,7 +287,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/R/">R</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MD/">MD</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/amber/">amber</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sdg/">sdg</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -297,7 +297,11 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get build-dep r-base</span><br><span class="line">如果不先安装好依赖包将会麻烦不断 比如不能和Rstudio联用 最后不能生成pdf 等</span><br><span class="line">./configure --prefix=<span class="variable">$HOME</span>/R/R-3.3.0 --enable-R-shlib --with-blas --with-lapack</span><br><span class="line">blas  speed up calculations that are common <span class="keyword">in</span> many analytic methods.</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line">sudo ln <span class="_">-s</span> /opt/R/3.2.3/bin/R /bin/R </span><br><span class="line"></span><br><span class="line">Finally, after you have installed R, you might want to check that it was compiled with all your desired capabilities (e.g. png, cairo, tcltk, etc.) with this <span class="built_in">command</span>:</span><br><span class="line"></span><br><span class="line">&gt; capabilities()</span><br></pre></td></tr></table></figure>
+        <h2 id="AMBER-会重给PDB编号"><a href="#AMBER-会重给PDB编号" class="headerlink" title="AMBER 会重给PDB编号"></a>AMBER 会重给PDB编号</h2><p>1.amber有 它命名的规则，都是重1开始增加无论单链or多链，而且AB链也不会有相同的number<br>amber 和sdg联用可以确保启始构象达到最合理化，sdg  prep Wiz 可以帮助检测原子的键数是否正确，有没有gap等等。<br>值得注意的是 sdg 默认loop建模并不一定合理，可以再次prep Wiz 检测 原子重叠情况越多越不合理。<br>2.tleap 保存 pdb时 即使水分子本来排序在B链之前，保存后所有的水分子 离子等都会排序在AA后面，所以加限制时一定要搞清number,<br>这也许是amber 自有的命名规则导致的缺陷。</p>
+<h2 id="AMBER-改in文件"><a href="#AMBER-改in文件" class="headerlink" title="AMBER 改in文件"></a>AMBER 改in文件</h2><p>1.通常不同.in文件有同样的参数，比如同样的限制标记符号 ntr=1, restraintmask=’:1-346’, 需要改成 ‘:1-368’<br>命令： sed -i “s/:1-346/:1-368/g” <code>grep :1-346 -rl ./in</code></p>
+<p>比如，要将目录in下面所有文件中的zhangsan都修改成lisi，向上那样<br>替换：s命令<br>     $ sed ‘s/test/mytest/g’ example—–在整行范围内把test替换为mytest。如果没有g标记，则只有每行第一个匹配的test被替换成mytest。<br>     -i 表示inplace edit，就地修改文件<br>-r 表示搜索子目录<br>-l 表示输出匹配的文件名<br>这个命令组合很强大，要注意备份文件。</p>
+<h2 id="用高斯计算电荷单点能"><a href="#用高斯计算电荷单点能" class="headerlink" title="用高斯计算电荷单点能"></a>用高斯计算电荷单点能</h2><p>如果小分子配体.pdb 中有原子如H4’ ，C2’, 高斯会生成.com中的原子对应加 H4d , C2P 等 目前还不知道含义是什么？</p>
+
       
     </div>
     
@@ -305,13 +309,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/05/22/R_install_bySource/">R,Rstudio install</a></p>
+        <p><span>本文标题:</span><a href="/2016/05/26/amber/">amber skills notices</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">lorybaby</a></p>
-        <p><span>发布时间:</span>2016-05-22, 14:41:19</p>
-        <p><span>最后更新:</span>2016-05-25, 10:16:15</p>
+        <p><span>发布时间:</span>2016-05-26, 14:41:19</p>
+        <p><span>最后更新:</span>2016-05-27, 21:14:37</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/05/22/R_install_bySource/" title="R,Rstudio install">http://lorybaby.github.io/2016/05/22/R_install_bySource/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://lorybaby.github.io/2016/05/22/R_install_bySource/　　作者: lorybaby" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/26/amber/" title="amber skills notices">http://lorybaby.github.io/2016/05/26/amber/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://lorybaby.github.io/2016/05/26/amber/　　作者: lorybaby" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -323,16 +327,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/26/protien_model/">
-                    built protien model and amber MD
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/05/19/pymol_cmd/">
-                    pymol skills
+                <a href="/2016/05/26/protien_model/">
+                    built protien model and amber MD
                 </a>
             </div>
         
@@ -343,7 +341,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#AMBER-会重给PDB编号"><span class="toc-number">1.</span> <span class="toc-text">AMBER 会重给PDB编号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#AMBER-改in文件"><span class="toc-number">2.</span> <span class="toc-text">AMBER 改in文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用高斯计算电荷单点能"><span class="toc-number">3.</span> <span class="toc-text">用高斯计算电荷单点能</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -400,7 +398,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"R,Rstudio install　| Tlory　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"amber skills notices　| Tlory　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -416,7 +414,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/05/22/R_install_bySource/" data-title="R,Rstudio install" data-url="http://lorybaby.github.io/2016/05/22/R_install_bySource/"></div>
+    <div class="ds-thread" data-thread-key="2016/05/26/amber/" data-title="amber skills notices" data-url="http://lorybaby.github.io/2016/05/26/amber/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -440,15 +438,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/26/protien_model/" title="上一篇: built protien model and amber MD">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/05/19/pymol_cmd/" title="下一篇: pymol skills">
+            <a href="/2016/05/26/protien_model/" title="下一篇: built protien model and amber MD">
                 <i class="fa fa-angle-right"></i>
             </a>
         

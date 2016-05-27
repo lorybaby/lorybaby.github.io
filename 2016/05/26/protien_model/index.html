@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>R,Rstudio install | Tlory</title>
+  <title>built protien model and amber MD | Tlory</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="R源安装最新版以及RStudio">
+  <meta name="description" content="蛋白建模">
 <meta property="og:type" content="article">
-<meta property="og:title" content="R,Rstudio install">
-<meta property="og:url" content="http://lorybaby.github.io/2016/05/22/R_install_bySource/index.html">
+<meta property="og:title" content="built protien model and amber MD">
+<meta property="og:url" content="http://lorybaby.github.io/2016/05/26/protien_model/index.html">
 <meta property="og:site_name" content="Tlory">
-<meta property="og:description" content="R源安装最新版以及RStudio">
-<meta property="og:updated_time" content="2016-05-25T02:16:15.574Z">
+<meta property="og:description" content="蛋白建模">
+<meta property="og:updated_time" content="2016-05-27T13:15:10.940Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="R,Rstudio install">
-<meta name="twitter:description" content="R源安装最新版以及RStudio">
+<meta name="twitter:title" content="built protien model and amber MD">
+<meta name="twitter:description" content="蛋白建模">
   
     <link rel="alternative" href="/atom.xml" title="Tlory" type="application/atom+xml">
   
@@ -259,11 +259,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-R_install_bySource" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-protien_model" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/22/R_install_bySource/" class="article-date">
-      <time datetime="2016-05-22T06:41:19.000Z" itemprop="datePublished">2016-05-22</time>
+      <a href="/2016/05/26/protien_model/" class="article-date">
+      <time datetime="2016-05-26T06:41:19.000Z" itemprop="datePublished">2016-05-26</time>
 </a>
     </div>
   
@@ -276,7 +276,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      R,Rstudio install
+      built protien model and amber MD
     </h1>
   
 
@@ -287,7 +287,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/R/">R</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/moldeller/">moldeller</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/sdg/">sdg</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -297,7 +297,10 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get build-dep r-base</span><br><span class="line">如果不先安装好依赖包将会麻烦不断 比如不能和Rstudio联用 最后不能生成pdf 等</span><br><span class="line">./configure --prefix=<span class="variable">$HOME</span>/R/R-3.3.0 --enable-R-shlib --with-blas --with-lapack</span><br><span class="line">blas  speed up calculations that are common <span class="keyword">in</span> many analytic methods.</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line">sudo ln <span class="_">-s</span> /opt/R/3.2.3/bin/R /bin/R </span><br><span class="line"></span><br><span class="line">Finally, after you have installed R, you might want to check that it was compiled with all your desired capabilities (e.g. png, cairo, tcltk, etc.) with this <span class="built_in">command</span>:</span><br><span class="line"></span><br><span class="line">&gt; capabilities()</span><br></pre></td></tr></table></figure>
+        <h2 id="license-MODELIRANJE"><a href="#license-MODELIRANJE" class="headerlink" title="license MODELIRANJE"></a>license MODELIRANJE</h2><p>需要注意的是easymodel 要求modeller 安装到默认目录c:\Program Files<br>若是linux版本 使用命令mod9.16</p>
+<h2 id="sdg"><a href="#sdg" class="headerlink" title="sdg"></a>sdg</h2><p>modeller 免费但是用起来需要有python常识，不是很友好，如果有薛定谔那就很方便了，<br>sdg–同源建模–predict structure</p>
+<h2 id="在晶体结构基础上修复N段缺失部分"><a href="#在晶体结构基础上修复N段缺失部分" class="headerlink" title="在晶体结构基础上修复N段缺失部分"></a>在晶体结构基础上修复N段缺失部分</h2><p>1.AB链对称，需要在AB的N两末端都加几个氨基酸，我的做法是AB链分别建模然后合并。—-更简单是选择Multi-template model type: Homo-multimer<br>这样同一目标序列（query sequnce on every template simultaneously)更具模板的空间坐标同时建模。<br>2.同一条链由不同模板构成  同上Multi-template model type: Composite/Chimera 鼠标选择要选的序列。<br>其实完全可以用重建模的方式突变or添加AA，以原晶体结构为模板，将更改的原序列为目标序列建模。<br>3.</p>
+
       
     </div>
     
@@ -305,13 +308,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/05/22/R_install_bySource/">R,Rstudio install</a></p>
+        <p><span>本文标题:</span><a href="/2016/05/26/protien_model/">built protien model and amber MD</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">lorybaby</a></p>
-        <p><span>发布时间:</span>2016-05-22, 14:41:19</p>
-        <p><span>最后更新:</span>2016-05-25, 10:16:15</p>
+        <p><span>发布时间:</span>2016-05-26, 14:41:19</p>
+        <p><span>最后更新:</span>2016-05-27, 21:15:10</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/05/22/R_install_bySource/" title="R,Rstudio install">http://lorybaby.github.io/2016/05/22/R_install_bySource/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://lorybaby.github.io/2016/05/22/R_install_bySource/　　作者: lorybaby" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/05/26/protien_model/" title="built protien model and amber MD">http://lorybaby.github.io/2016/05/26/protien_model/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://lorybaby.github.io/2016/05/26/protien_model/　　作者: lorybaby" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -324,15 +327,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/26/protien_model/">
-                    built protien model and amber MD
+                <a href="/2016/05/26/amber/">
+                    amber skills notices
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/05/19/pymol_cmd/">
-                    pymol skills
+                <a href="/2016/05/22/R_install_bySource/">
+                    R,Rstudio install
                 </a>
             </div>
         
@@ -343,7 +346,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#license-MODELIRANJE"><span class="toc-number">1.</span> <span class="toc-text">license MODELIRANJE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sdg"><span class="toc-number">2.</span> <span class="toc-text">sdg</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在晶体结构基础上修复N段缺失部分"><span class="toc-number">3.</span> <span class="toc-text">在晶体结构基础上修复N段缺失部分</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -400,7 +403,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"R,Rstudio install　| Tlory　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"built protien model and amber MD　| Tlory　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -416,7 +419,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/05/22/R_install_bySource/" data-title="R,Rstudio install" data-url="http://lorybaby.github.io/2016/05/22/R_install_bySource/"></div>
+    <div class="ds-thread" data-thread-key="2016/05/26/protien_model/" data-title="built protien model and amber MD" data-url="http://lorybaby.github.io/2016/05/26/protien_model/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -440,7 +443,7 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/26/protien_model/" title="上一篇: built protien model and amber MD">
+            <a href="/2016/05/26/amber/" title="上一篇: amber skills notices">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -448,7 +451,7 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/05/19/pymol_cmd/" title="下一篇: pymol skills">
+            <a href="/2016/05/22/R_install_bySource/" title="下一篇: R,Rstudio install">
                 <i class="fa fa-angle-right"></i>
             </a>
         
