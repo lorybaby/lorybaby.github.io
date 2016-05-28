@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html >
 <head>
+  
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
   <meta charset="utf-8">
   
   <title>built protien model and amber MD | Tlory</title>
@@ -11,7 +17,7 @@
 <meta property="og:url" content="http://lorybaby.github.io/2016/05/26/protien_model/index.html">
 <meta property="og:site_name" content="Tlory">
 <meta property="og:description" content="蛋白建模">
-<meta property="og:updated_time" content="2016-05-27T13:17:18.236Z">
+<meta property="og:updated_time" content="2016-05-28T03:05:52.864Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="built protien model and amber MD">
 <meta name="twitter:description" content="蛋白建模">
@@ -22,8 +28,7 @@
     <link rel="icon" href="/favicon.png">
   
   
-      <link href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
-  
+      <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
   
   
       <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
@@ -31,14 +36,14 @@
   
   <link rel="stylesheet" href="/css/style.css">
   
-  <link href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
   
       <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
   
-  <script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
-  <script src="//cdn.bootcss.com/clipboard.js/1.5.9/clipboard.min.js"></script>
+  <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
   <script>
       var yiliaConfig = {
           fancybox: true,
@@ -50,9 +55,16 @@
           isCategory: false,
           open_in_new: false,
           fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
-          scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.0.9/scrollreveal.min.js"
+          scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+          search: undefined
       }
   </script>
+
+  
+      <script>
+          yiliaConfig.jquery_ui = [false];
+      </script>
+  
 
   
       <script>
@@ -79,7 +91,8 @@
         
         <p class="header-subtitle">Love my lory</p>
         
-                
+
+        
 
 
         
@@ -143,25 +156,11 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" target="_blank" href="/lorybaby@126.com" title="Email"></a>
+                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
                             
                                 <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
                             
                                 <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
-                            
-                                <a class="fa 知乎" target="_blank" href="/zhihu" title="知乎"></a>
-                            
-                                <a class="fa 豆瓣" target="_blank" href="/douban" title="豆瓣"></a>
-                            
-                                <a class="fa 简书" target="_blank" href="/jianshu" title="简书"></a>
-                            
-                                <a class="fa 网易云音乐" target="_blank" href="/netease" title="网易云音乐"></a>
-                            
-                                <a class="fa Google" target="_blank" href="#" title="Google"></a>
-                            
-                                <a class="fa QQ" target="_blank" href="#" title="QQ"></a>
-                            
-                                <a class="fa 微信" target="_blank" href="/Wechat" title="微信"></a>
                             
                         </ul>
                     </nav>
@@ -170,7 +169,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MD/">MD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/amber/">amber</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cuda/">cuda</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/moldeller/">moldeller</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nvidia/">nvidia</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pymol/">pymol</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sdg/">sdg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/soft/">soft</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/">ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubutnu/">ubutnu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/win/">win</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/word/">word</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/共享/">共享</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/MD/">MD</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/R/">R</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/amber/">amber</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bash/">bash</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/blog/">blog</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/cuda/">cuda</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/markdown/">markdown</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/moldeller/">moldeller</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nvidia/">nvidia</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/pymol/">pymol</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sdg/">sdg</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/soft/">soft</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime/">sublime</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/">ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubutnu/">ubutnu</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/win/">win</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/word/">word</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/共享/">共享</a></li></ul>
                     </div>
                 </section>
                 
@@ -183,6 +182,8 @@
                     
                       <a target="_blank" class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
                     
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
                     </div>
                 </section>
                 
@@ -191,7 +192,7 @@
                 
                 <section class="switch-part switch-part4">
                 
-                    <div id="js-aboutme">修生齐家</div>
+                    <div id="js-aboutme">专注于前端</div>
                 </section>
                 
             </div>
@@ -233,25 +234,11 @@
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" target="_blank" href="/lorybaby@126.com" title="Email"></a>
+                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
                             
                                 <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
                             
                                 <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
-                            
-                                <a class="fa 知乎" target="_blank" href="/zhihu" title="知乎"></a>
-                            
-                                <a class="fa 豆瓣" target="_blank" href="/douban" title="豆瓣"></a>
-                            
-                                <a class="fa 简书" target="_blank" href="/jianshu" title="简书"></a>
-                            
-                                <a class="fa 网易云音乐" target="_blank" href="/netease" title="网易云音乐"></a>
-                            
-                                <a class="fa Google" target="_blank" href="#" title="Google"></a>
-                            
-                                <a class="fa QQ" target="_blank" href="#" title="QQ"></a>
-                            
-                                <a class="fa 微信" target="_blank" href="/Wechat" title="微信"></a>
                             
                         </ul>
             </nav>
@@ -299,7 +286,8 @@
           
         <h2 id="license-MODELIRANJE"><a href="#license-MODELIRANJE" class="headerlink" title="license MODELIRANJE"></a>license MODELIRANJE</h2><p>需要注意的是easymodel 要求modeller 安装到默认目录c:\Program Files<br>若是linux版本 使用命令mod9.16</p>
 <h2 id="sdg"><a href="#sdg" class="headerlink" title="sdg"></a>sdg</h2><p>modeller 免费但是用起来需要有python常识，不是很友好，如果有薛定谔那就很方便了，<br>sdg–同源建模–predict structure</p>
-<h2 id="在晶体结构基础上修复N段缺失部分"><a href="#在晶体结构基础上修复N段缺失部分" class="headerlink" title="在晶体结构基础上修复N段缺失部分"></a>在晶体结构基础上修复N段缺失部分</h2><p>1.AB链对称，需要在AB的N两末端都加几个氨基酸，我的做法是AB链分别建模然后合并。—-更简单是选择Multi-template model type: Homo-multimer<br>这样同一目标序列（query sequnce on every template simultaneously)更具模板的空间坐标同时建模。<br>2.同一条链由不同模板构成  同上Multi-template model type: Composite/Chimera 鼠标选择要选的序列。<br>其实完全可以用重建模的方式突变or添加AA，以原晶体结构为模板，将更改的原序列为目标序列建模。<br>3.</p>
+<h2 id="在晶体结构基础上修复N段缺失部分"><a href="#在晶体结构基础上修复N段缺失部分" class="headerlink" title="在晶体结构基础上修复N段缺失部分"></a>在晶体结构基础上修复N段缺失部分</h2><p>1.AB链对称，需要在AB的N两末端都加几个氨基酸，我的做法是AB链分别建模然后合并。—-更简单是选择Multi-template model type: Homo-multimer<br>这样同一目标序列（query sequnce on every template simultaneously)更具模板的空间坐标同时建模。</p>
+<h2 id="2-同一条链由不同模板构成"><a href="#2-同一条链由不同模板构成" class="headerlink" title="2.同一条链由不同模板构成"></a>2.同一条链由不同模板构成</h2><p>  同上Multi-template model type: Composite/Chimera 鼠标选择要选的序列。<br>其实完全可以用重建模的方式突变or添加AA，以原晶体结构为模板，将更改的原序列为目标序列建模。</p>
 
       
     </div>
@@ -311,14 +299,14 @@
         <p><span>本文標題:</span><a href="/2016/05/26/protien_model/">built protien model and amber MD</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主頁">lorybaby</a></p>
         <p><span>發布時間:</span>2016-05-26, 14:41:19</p>
-        <p><span>最後更新:</span>2016-05-27, 21:17:18</p>
+        <p><span>最後更新:</span>2016-05-28, 11:05:52</p>
         <p>
             <span>原始鏈接:</span><a class="post-url" href="/2016/05/26/protien_model/" title="built protien model and amber MD">http://lorybaby.github.io/2016/05/26/protien_model/</a>
             <span class="copy-path" data-clipboard-text="原文: http://lorybaby.github.io/2016/05/26/protien_model/　　作者: lorybaby" title="點擊複製文章鏈接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>許可協議:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 轉載請保留原文鏈接及作者。
+            <span>許可協議:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"姓名標示-非商業性-相同方式分享 4.0 國際"</a> 轉載請保留原文鏈接及作者。
         </p>
     </div>
 
@@ -327,15 +315,15 @@
     <nav id="article-nav">
         
             <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/05/26/amber/">
-                    amber skills notices
+                <a href="/2016/05/28/cite_SCI/">
+                    
                 </a>
             </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/05/22/R_install_bySource/">
-                    R,Rstudio install
+                <a href="/2016/05/26/amber/">
+                    amber skills notices
                 </a>
             </div>
         
@@ -346,7 +334,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目錄</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#license-MODELIRANJE"><span class="toc-number">1.</span> <span class="toc-text">license MODELIRANJE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sdg"><span class="toc-number">2.</span> <span class="toc-text">sdg</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在晶体结构基础上修复N段缺失部分"><span class="toc-number">3.</span> <span class="toc-text">在晶体结构基础上修复N段缺失部分</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#license-MODELIRANJE"><span class="toc-number">1.</span> <span class="toc-text">license MODELIRANJE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sdg"><span class="toc-number">2.</span> <span class="toc-text">sdg</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在晶体结构基础上修复N段缺失部分"><span class="toc-number">3.</span> <span class="toc-text">在晶体结构基础上修复N段缺失部分</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-同一条链由不同模板构成"><span class="toc-number">4.</span> <span class="toc-text">2.同一条链由不同模板构成</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn {
@@ -417,33 +405,13 @@
 
 
     
-      <div class="duoshuo" id="comments">
-    <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2016/05/26/protien_model/" data-title="built protien model and amber MD" data-url="http://lorybaby.github.io/2016/05/26/protien_model/"></div>
-    <!-- 多说评论框 end -->
-    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-    <script type="text/javascript">
-    var duoshuoQuery = {short_name:"tbwzyc"};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] 
-         || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-    </script>
-    <!-- 多说公共JS代码 end -->
-</div>
-
-    
 
 
 
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/05/26/amber/" title="上一篇: amber skills notices">
+            <a href="/2016/05/28/cite_SCI/" title="上一篇: ">
                 <i class="fa fa-angle-left"></i>
             </a>
         
@@ -451,13 +419,13 @@
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/05/22/R_install_bySource/" title="下一篇: R,Rstudio install">
+            <a href="/2016/05/26/amber/" title="下一篇: amber skills notices">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/amber/">amber skills notices</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/protien_model/">built protien model and amber MD</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/22/R_install_bySource/">R,Rstudio install</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/pymol_cmd/">pymol skills</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/sdg_skill/">sdg skills</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/word_skills/">word skills</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/04/ubuntu-win-soft/">ubuntu win soft</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/03/ubuntu共享文件给win/">ubuntu共享文件给win</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/01/usegit-hexo-blog/">git hexo blog</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/01/ubuntu-on-x99-gtx980-nvidia/">ubuntu on x99+ gtx980 nvidia</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/05/28/subl/">sublime with markdown</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/28/cite_SCI/">cite_SCI</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/protien_model/">built protien model and amber MD</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/amber/">amber skills notices</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/22/R_install_bySource/">R,Rstudio install</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/sdg_skill/">sdg skills</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/pymol_cmd/">pymol skills</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/19/word_skills/">word skills</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/04/ubuntu-win-soft/">ubuntu win soft</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/03/ubuntu共享文件给win/">ubuntu共享文件给win</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/01/usegit-hexo-blog/">git hexo blog</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/01/ubuntu-on-x99-gtx980-nvidia/">ubuntu on x99+ gtx980 nvidia</a></li></ul>
 
 
 
@@ -502,7 +470,7 @@
 </footer>
     </div>
     
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.1.22/require.min.js"></script>
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
 
     <script>
         $(document).ready(function() {
@@ -528,7 +496,6 @@
     <a href="#comments" title="查看評論"><i class="fa fa-comments-o"></i></a>
     <a href="#footer" title="轉到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
-
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
   </div>
