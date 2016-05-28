@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[Cite_SCI]]></title>
+      <url>http://lorybaby.github.io/2016/05/28/cite_SCI/</url>
+      <content type="html"><![CDATA[<p>#gaosi<br> Cite this work as:<br> Gaussian 09, Revision D.01,<br> M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria,<br> M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, B. Mennucci,<br> G. A. Petersson, H. Nakatsuji, M. Caricato, X. Li, H. P. Hratchian,<br> A. F. Izmaylov, J. Bloino, G. Zheng, J. L. Sonnenberg, M. Hada,<br> M. Ehara, K. Toyota, R. Fukuda, J. Hasegawa, M. Ishida, T. Nakajima,<br> Y. Honda, O. Kitao, H. Nakai, T. Vreven, J. A. Montgomery, Jr.,<br> J. E. Peralta, F. Ogliaro, M. Bearpark, J. J. Heyd, E. Brothers,<br> K. N. Kudin, V. N. Staroverov, T. Keith, R. Kobayashi, J. Normand,<br> K. Raghavachari, A. Rendell, J. C. Burant, S. S. Iyengar, J. Tomasi,<br> M. Cossi, N. Rega, J. M. Millam, M. Klene, J. E. Knox, J. B. Cross,<br> V. Bakken, C. Adamo, J. Jaramillo, R. Gomperts, R. E. Stratmann,<br> O. Yazyev, A. J. Austin, R. Cammi, C. Pomelli, J. W. Ochterski,<br> R. L. Martin, K. Morokuma, V. G. Zakrzewski, G. A. Voth,<br> P. Salvador, J. J. Dannenberg, S. Dapprich, A. D. Daniels,<br> O. Farkas, J. B. Foresman, J. V. Ortiz, J. Cioslowski,<br> and D. J. Fox, Gaussian, Inc., Wallingford CT, 2013.</p>
+<p>#pymol<br>W. L. DeLano,DeLano Scientic, San Carlos, CA, 2002, p. 452.</p>
+<p>#sdg<br>Schrödinger Release 2015-1: Maestro, version 10.1, Schrödinger, LLC, New York, NY, 2015.</p>
+<p>[Small-Molecule Drug Discovery Suite 2015-1: Glide, version 6.6, Schrödinger, LLC,  NY, 2015.]</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[sublime with markdown]]></title>
+      <url>http://lorybaby.github.io/2016/05/28/subl/</url>
+      <content type="html"><![CDATA[<h2 id="sulbime-markdow-highlight"><a href="#sulbime-markdow-highlight" class="headerlink" title="sulbime markdow highlight"></a>sulbime markdow highlight</h2><ol>
+<li>install Monokai Extended pacakge and select the Monokai Extended color scheme</li>
+<li>install The Markdown Extended Package and enjoy language-specific syntax highlighting<br>安装完毕 ctrl+shift+p  单词首字母ssme (set syntax:Markdown Extended) 快速切换highlighting mode.</li>
+</ol>
+<h2 id="markdown-语法简介"><a href="#markdown-语法简介" class="headerlink" title="markdown 语法简介"></a>markdown 语法简介</h2><p>直接以hexo主题为例：</p>
+<h3 id="Introduction-前言"><a href="#Introduction-前言" class="headerlink" title="Introduction 前言"></a>Introduction 前言</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Theme **Yelee** 用黑体 relies on [Hexo-Theme-Yilia][1], thanks for the author [Litten][2]. Fix some bugs, change lots of styles, add several features. And then I made the theme. Yelee is mainly designed for fluent text reading. I change styles and add functions, meanwhile, try hard to keep this theme simple, stupid and clear. Theme DEMO: [MOxFIVE&apos;s Blog][6]</span><br><span class="line"></span><br><span class="line">&gt; 使用段落快</span><br><span class="line">链接也可以直接follow: e.g [Preview](http://hexo.io/hexo-theme-landscape/),但是用上面的方式好处是可以重复使用</span><br><span class="line">简单的代号代表，类似SCI文章里的参考文献使用。</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>M-Hexo-Blog <a href="https://github.com/MOxFIVE/M-Hexo-Blog/commits/master" target="_blank" rel="external">Commits</a>; hexo-theme-yelee <a href="https://github.com/MOxFIVE/hexo-theme-yelee/commits/master" target="_blank" rel="external">Commits</a>; <a href="http://moxfive.xyz/2015/08/20/blog-building/" title="个人博客站点建设历程" target="_blank" rel="external">建站日志</a></p>
+</blockquote>
+<p>本主题 <strong>Yelee</strong> 基于主题 <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">Hexo-Theme-Yilia</a> 修改而来，在此感谢原作者 <a href="http://litten.github.io/" title="Litten的博客" target="_blank" rel="external">Litten</a>。修复了一些 bugs，改变了大量的样式，添加了不少特性。对原主题百般折腾后，发觉变动越来越大，索性就发布个新主题了，主题随我微博名叫 “Yelee” 。个人喜欢简洁的样式，重视内容的浏览，同时希望博客作为个人网站，能稍微凸显出博主个性。各种修改折腾大抵基于以上考虑。主题实际效果，请访问本人博客查看：<a href="http://moxfive.xyz" target="_blank" rel="external">MOxFIVE’s Blog</a></p>
+<p>‘’’<img src="https://moxfive.github.io/resources/yelee-qrcode.png" alt="QR">这是个二维码  国内喜欢用’’’</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">### New Features 新特性</span><br><span class="line">| - |            Chs           |                En               |</span><br><span class="line">|:-:|:------------------------:|:-------------------------------:|</span><br><span class="line">| 1 | 嵌入边栏的文章目录       | Flexible table of contents      |</span><br><span class="line">| 2 | 透明化背景，随机背景大图 | Transparent &amp; Random background |</span><br><span class="line">| 3 | 页内跳转按钮             | Scrolling button                |</span><br><span class="line">| 4 | 文章版权等信息显示       | Copyright info.                 |</span><br><span class="line">| 5 | 文章导航切换按钮         | Post navigation button          |</span><br><span class="line">| 6 | 网站计数                 | Site counter                    |</span><br><span class="line">| 7 | 多语言支持                 | i18n, multi-language          |</span><br><span class="line"></span><br><span class="line">表格使用</span><br><span class="line">“```”不指定语言模式 效果类似段落块</span><br></pre></td></tr></table></figure>
+<p><code>单独的字体加背景块</code> 用``<br><figure class="highlight yml"><figcaption><span>hightlight何种语言 bash  [图片](test.png)</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">## 主题更新</span></span><br><span class="line">``` git</span><br><span class="line">cd themes/yelee</span><br><span class="line">git pull</span><br><span class="line"><span class="attr">error:</span> Your local changes to the following files would be overwritten by merge:</span><br><span class="line">        _config.yml</span><br><span class="line">        layout/_partial/footer.ejs</span><br><span class="line">Please, commit your changes or stash them before you can merge.</span><br><span class="line">Aborting</span><br><span class="line"></span><br><span class="line">Commit the change using</span><br><span class="line">git commit -m <span class="string">"My message"</span></span><br><span class="line">git pull</span><br><span class="line">or 重命名原来的文件 比较pull后差异 在决定添加更改</span><br></pre></td></tr></table></figure></p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[built protien model and amber MD]]></title>
+      <url>http://lorybaby.github.io/2016/05/26/protien_model/</url>
+      <content type="html"><![CDATA[<h2 id="license-MODELIRANJE"><a href="#license-MODELIRANJE" class="headerlink" title="license MODELIRANJE"></a>license MODELIRANJE</h2><p>需要注意的是easymodel 要求modeller 安装到默认目录c:\Program Files<br>若是linux版本 使用命令mod9.16</p>
+<h2 id="sdg"><a href="#sdg" class="headerlink" title="sdg"></a>sdg</h2><p>modeller 免费但是用起来需要有python常识，不是很友好，如果有薛定谔那就很方便了，<br>sdg–同源建模–predict structure</p>
+<h2 id="在晶体结构基础上修复N段缺失部分"><a href="#在晶体结构基础上修复N段缺失部分" class="headerlink" title="在晶体结构基础上修复N段缺失部分"></a>在晶体结构基础上修复N段缺失部分</h2><p>1.AB链对称，需要在AB的N两末端都加几个氨基酸，我的做法是AB链分别建模然后合并。—-更简单是选择Multi-template model type: Homo-multimer<br>这样同一目标序列（query sequnce on every template simultaneously)更具模板的空间坐标同时建模。</p>
+<h2 id="2-同一条链由不同模板构成"><a href="#2-同一条链由不同模板构成" class="headerlink" title="2.同一条链由不同模板构成"></a>2.同一条链由不同模板构成</h2><p>  同上Multi-template model type: Composite/Chimera 鼠标选择要选的序列。<br>其实完全可以用重建模的方式突变or添加AA，以原晶体结构为模板，将更改的原序列为目标序列建模。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[amber skills notices]]></title>
+      <url>http://lorybaby.github.io/2016/05/26/amber/</url>
+      <content type="html"><![CDATA[<h2 id="AMBER-会重给PDB编号"><a href="#AMBER-会重给PDB编号" class="headerlink" title="AMBER 会重给PDB编号"></a>AMBER 会重给PDB编号</h2><p>1.amber有 它命名的规则，都是重1开始增加无论单链or多链，而且AB链也不会有相同的number<br>amber 和sdg联用可以确保启始构象达到最合理化，sdg  prep Wiz 可以帮助检测原子的键数是否正确，有没有gap等等。<br>值得注意的是 sdg 默认loop建模并不一定合理，可以再次prep Wiz 检测 原子重叠情况越多越不合理。<br>2.tleap 保存 pdb时 即使水分子本来排序在B链之前，保存后所有的水分子 离子等都会排序在AA后面，所以加限制时一定要搞清number,<br>这也许是amber 自有的命名规则导致的缺陷。</p>
+<h2 id="AMBER-改in文件"><a href="#AMBER-改in文件" class="headerlink" title="AMBER 改in文件"></a>AMBER 改in文件</h2><p>1.通常不同.in文件有同样的参数，比如同样的限制标记符号 ntr=1, restraintmask=’:1-346’, 需要改成 ‘:1-368’<br>命令： sed -i “s/:1-346/:1-368/g” <code>grep :1-346 -rl ./in</code></p>
+<p>比如，要将目录in下面所有文件中的zhangsan都修改成lisi，向上那样<br>替换：s命令<br>     $ sed ‘s/test/mytest/g’ example—–在整行范围内把test替换为mytest。如果没有g标记，则只有每行第一个匹配的test被替换成mytest。<br>     -i 表示inplace edit，就地修改文件<br>-r 表示搜索子目录<br>-l 表示输出匹配的文件名<br>这个命令组合很强大，要注意备份文件。</p>
+<h2 id="用高斯计算电荷单点能"><a href="#用高斯计算电荷单点能" class="headerlink" title="用高斯计算电荷单点能"></a>用高斯计算电荷单点能</h2><p>如果小分子配体.pdb 中有原子如H4’ ，C2’, 高斯会生成.com中的原子对应加 H4d , C2P 等 目前还不知道含义是什么？</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[R,Rstudio install]]></title>
+      <url>http://lorybaby.github.io/2016/05/22/R_install_bySource/</url>
+      <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get build-dep r-base</span><br><span class="line">如果不先安装好依赖包将会麻烦不断 比如不能和Rstudio联用 最后不能生成pdf 等</span><br><span class="line">./configure --prefix=<span class="variable">$HOME</span>/R/R-3.3.0 --enable-R-shlib --with-blas --with-lapack</span><br><span class="line">blas  speed up calculations that are common <span class="keyword">in</span> many analytic methods.</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line">sudo ln <span class="_">-s</span> /opt/R/3.2.3/bin/R /bin/R </span><br><span class="line"></span><br><span class="line">Finally, after you have installed R, you might want to check that it was compiled with all your desired capabilities (e.g. png, cairo, tcltk, etc.) with this <span class="built_in">command</span>:</span><br><span class="line"></span><br><span class="line">&gt; capabilities()</span><br></pre></td></tr></table></figure>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[sdg skills]]></title>
+      <url>http://lorybaby.github.io/2016/05/19/sdg_skill/</url>
+      <content type="html"><![CDATA[<h2 id="shrodinger"><a href="#shrodinger" class="headerlink" title="shrodinger"></a>shrodinger</h2><p>Apply–&gt;settings—&gt;change want style then —click Apply<br>sdg 可视化并不能将整个蛋白surface 应为其grid空间限制了大小 maximum=grid size<br>Van der Waals</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[pymol skills]]></title>
+      <url>http://lorybaby.github.io/2016/05/19/pymol_cmd/</url>
+      <content type="html"><![CDATA[<h2 id="pymol-cmd"><a href="#pymol-cmd" class="headerlink" title="pymol cmd"></a>pymol cmd</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">load com.top,mov,format=top      <span class="comment">###pymol要求载入轨迹前要先载入拓扑文件，除非后缀是top，后缀是prmtop的话除非定义一下格式，否则是不认的（不知是不是只有我有这个情况）</span></span><br><span class="line">load_traj head.crd,mov,format=trj   </span><br><span class="line"></span><br><span class="line">mset 1 x60              ;</span><br><span class="line"><span class="comment"># define a movie of 60 frames</span></span><br><span class="line">util.mrock(1,60,60,1,1) ;</span><br><span class="line"><span class="comment"># issues mdo commands to create -/+ 60 deg. rock over 60 frames</span></span><br><span class="line"><span class="built_in">set</span> ray_trace_frames=1  ;</span><br><span class="line"><span class="comment"># whether or not ray each frame （0 - don ray each frame)</span></span><br><span class="line"><span class="built_in">set</span> cache_frames=1      ;</span><br><span class="line"><span class="comment"># whether or not PyMOL saves frames in memory</span></span><br><span class="line">mplay                   ;</span><br><span class="line"><span class="comment"># play the movie</span></span><br><span class="line">mpng mov                ;</span><br><span class="line"><span class="comment"># will create mov0001.png, mov0002.png, ... mov0060.png.</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#pymol </span></span><br><span class="line"><span class="built_in">set</span> ray_shadows,off  <span class="comment"># turn off shadows</span></span><br></pre></td></tr></table></figure>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[word skills]]></title>
+      <url>http://lorybaby.github.io/2016/05/19/word_skills/</url>
+      <content type="html"><![CDATA[<p>记住论文封面所要求的格式 楷体_GB2312间官网</p>
+<p>word 里面字母上面打横杠 。 符号—Symbol—上横杠, 注意要在字母之前插入。<br>在编辑前先把格式设好就不用每次去敲了<br>1.单击“页面布局”选项卡，然后在“段落”组中，单击对话框启动器。</p>
+<p>2.单击“缩进和间距”选项卡，然后在“缩进”下的“特殊格式”列表中，单击“首行缩进”，并在“度量值”框中设置首行缩进为“2字符”<br>3.公式 与其编号空格15 公式前空10格<br>           公式前空10格<br>               与其编号空格15 </p>
+<p>4.页眉插入要求与前面不同：07word—页面布局—分隔符—–分节符-下一页，注意插入的位置应该在在前一页末尾插入分节符，—取消与前一节相同。<br>  删除指定页面的页眉：去除页眉文字然后点击无边框。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[ubuntu win soft]]></title>
+      <url>http://lorybaby.github.io/2016/05/04/ubuntu-win-soft/</url>
+      <content type="html"><![CDATA[<h2 id="配置安装foxit-Reader"><a href="#配置安装foxit-Reader" class="headerlink" title="配置安装foxit Reader"></a>配置安装foxit Reader</h2><p>安装好wine<br>找foxit 阅读器  这里使用的是7.0版本绿色免安装 win7 下解压安装好 直接考到ubuntu里<br>不要随意改变foxit文件夹ubuntu里的位置<br>then  change the foxitReader style </p>
+<h2 id="bashrc-记录"><a href="#bashrc-记录" class="headerlink" title="bashrc 记录"></a>bashrc 记录</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="built_in">export</span> WOR=<span class="variable">$HOME</span>/work</span><br><span class="line"><span class="built_in">export</span> PRO=<span class="variable">$HOME</span>/pro</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#cuda</span></span><br><span class="line"><span class="built_in">export</span> CUDA_HOME=/usr/<span class="built_in">local</span>/cuda-7.5</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$CUDA_HOME</span>/bin</span><br><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=<span class="variable">$LD_LIBRARY_PATH</span>:<span class="variable">$CUDA_HOME</span>/lib64</span><br><span class="line"><span class="comment">#amber</span></span><br><span class="line"><span class="built_in">export</span> AMBERHOME=<span class="variable">$PRO</span>/amber14</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$AMBERHOME</span>/bin</span><br><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=<span class="variable">$LD_LIBRARY_PATH</span>:<span class="variable">$AMBERHOME</span>/lib</span><br><span class="line"><span class="comment">#FOR  gv</span></span><br><span class="line"><span class="built_in">export</span> GV_DIR=<span class="variable">$PRO</span>/g09/gview</span><br><span class="line"><span class="built_in">export</span> LIBPATH=<span class="variable">$PRO</span>/g09/gview</span><br><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=<span class="variable">$LD_LIBRARY_PATH</span>:<span class="variable">$PRO</span>/g09/gview/lib</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$PRO</span>/g09/gview</span><br><span class="line"><span class="built_in">alias</span> gv=<span class="string">'gview.exe'</span></span><br><span class="line"><span class="comment">#for guassian</span></span><br><span class="line"><span class="built_in">export</span> g09root=<span class="variable">$PRO</span>/g09</span><br><span class="line"><span class="built_in">export</span> GAUSS_SCRDIR=<span class="variable">$PRO</span>/g09/scratch</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$g09root</span></span><br><span class="line"><span class="built_in">source</span> <span class="variable">$PRO</span>/g09/bsd/g09.profile</span><br><span class="line"><span class="comment">#for java</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:/usr/lib/jvm/java-7-openjdk-amd64/bin</span><br><span class="line"><span class="comment">#for sdg</span></span><br><span class="line"><span class="built_in">export</span> SCHRODINGER=/home/lory/pro/sdg</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$SDG_HOME</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#for foxitReader</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$HOME</span>/pro/Foxit Reader</span><br><span class="line"></span><br><span class="line"><span class="built_in">alias</span> opendir=<span class="string">'nautilus'</span></span><br><span class="line"><span class="built_in">alias</span> sopendir=<span class="string">'sudo nautilus'</span></span><br><span class="line"><span class="built_in">alias</span> sdg=\<span class="variable">$SCHRODINGER</span>/maestro</span><br></pre></td></tr></table></figure>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[ubuntu共享文件给win]]></title>
+      <url>http://lorybaby.github.io/2016/05/03/ubuntu%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E7%BB%99win/</url>
+      <content type="html"><![CDATA[<h2 id="ubuntu-安装-sambea-sudo-apt-get-install-samba"><a href="#ubuntu-安装-sambea-sudo-apt-get-install-samba" class="headerlink" title="ubuntu 安装 sambea       sudo apt-get install samba"></a>ubuntu 安装 sambea       sudo apt-get install samba</h2><p>利用图形操作 右键单击开启 文件夹共享 所有的都选择 实现win多台登录无序密码 文件夹地址//xxx.xxx.178.236<br>可以把文献都发到此目录方便同步阅读记录。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[git hexo blog]]></title>
+      <url>http://lorybaby.github.io/2016/05/01/usegit-hexo-blog/</url>
+      <content type="html"><![CDATA[<h2 id="A电脑"><a href="#A电脑" class="headerlink" title="A电脑"></a>A电脑</h2><p>先github创建一个库名为lorybaby.github.io， github它规定了此命名方式<br>命令终端里建立库作为博客用<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">"lorybby"</span></span><br><span class="line"> git config --global user.email <span class="string">"lorybaby@126.com"</span></span><br><span class="line"> git config --lis</span><br><span class="line"></span><br><span class="line"> ssh-keygen -t rsa -C <span class="string">"lorybaby@126.com"</span></span><br><span class="line">将 .ssh/*pub 复制到github  ---settings--SSH-add new ssh keys</span><br><span class="line"></span><br><span class="line">ssh git@github.com</span><br><span class="line">查看github的用户</span><br><span class="line"><span class="built_in">cd</span>  folder-yours</span><br><span class="line">hexo init</span><br><span class="line">npm install </span><br><span class="line">npm install hexo-deployer-git</span><br><span class="line">hexo g <span class="_">-d</span> </span><br><span class="line">发布失败看提升---git not found 则改 _config.yml </span><br><span class="line">deploy: <span class="comment">#注意则里要有个空格 保留后再hexo d就通过了 这个算是hexo设计不合理吧</span></span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:lorybaby/lorybaby.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">hexo d  lorybaby.github.io查看博客</span><br><span class="line"></span><br><span class="line">接着github创建hexo库来保存hexo文件下所有资料包括blog文件</span><br><span class="line"><span class="built_in">echo</span> <span class="string">"lll"</span> &gt;&gt; README.md</span><br><span class="line">git init</span><br><span class="line">git add README.md</span><br><span class="line">git commit -m <span class="string">"first commit"</span></span><br><span class="line"> git remote add origin git@github.com:hex_blog</span><br><span class="line">  fatal: remote origin already exists. </span><br><span class="line"> first</span><br><span class="line">  git remote rm origin</span><br><span class="line">  <span class="keyword">then</span> </span><br><span class="line"> git remote add origin git@github.com:hex_blog</span><br><span class="line"></span><br><span class="line"> git push -u origin master</span><br></pre></td></tr></table></figure></p>
+<p>现在 github 有2个库 一个是博客显示用  一个是所有配置文件存放用。</p>
+<h2 id="In-B-computer"><a href="#In-B-computer" class="headerlink" title="In  B computer"></a>In  B computer</h2><p>接着用其它电脑就可以 git clone git@github.com:hexo到电脑本地接着写同一个博客<br>以后可以直接git  pull 新变化到本地<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">缺什么配置安装什么</span><br><span class="line">注意新电脑里ssh key 添加到github上</span><br><span class="line">写完博客后hexo g <span class="_">-d</span>  or  hexo d 发布博客</span><br><span class="line">最后把更新push</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"new change desk"</span></span><br><span class="line">git push -u</span><br><span class="line"><span class="comment">##  Create a new post</span></span><br><span class="line"></span><br><span class="line">``` bash</span><br><span class="line">hexo new <span class="string">"new blog post"</span></span><br><span class="line">hexo new page <span class="string">"new page about or something"</span></span><br></pre></td></tr></table></figure></p>
+<p>ssh git@github.com<br>hexo d 就不会有 host key的报错了  github 里的SSH里对应电脑的SHH钥匙会变亮了。<br>最后把变化更新备份到例外一个blog库里<br>git add .<br>git commit -m “this new change for blog”<br> git remote add origin git@github.com:hex_blog<br>git push -u origin master</p>
+<p>台式机写博客，先执行下面一种把笔记的更新合并到本地<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">down vote</span><br><span class="line">One approach is to commit that file first <span class="keyword">then</span> pull.</span><br><span class="line"></span><br><span class="line">git add filename</span><br><span class="line">git commit </span><br><span class="line">//enter your commit message and save </span><br><span class="line">git pull </span><br><span class="line"></span><br><span class="line">Another approach is stash your changes <span class="keyword">then</span> pull. Then apply stash.</span><br><span class="line"></span><br><span class="line">git stash</span><br><span class="line">git pull</span><br><span class="line">git stash apply stash@&#123;0&#125;</span><br></pre></td></tr></table></figure></p>
+<p>然后台式电脑写好博客 hexo g -d </p>
+<h2 id="简介命令"><a href="#简介命令" class="headerlink" title="简介命令"></a>简介命令</h2><pre><code class="bash">hexo init
+npm install 
+
+npm install hexo-deployer-git --save  <span class="comment">#有时候必须有save</span>
+hexo g <span class="_">-d</span>
+
+git init
+git add .
+git commit -m <span class="string">"laptop"</span>
+git remote add origin git@github.com:lorybaby/hexo
+git push -u origin master
+<span class="comment">#此时可能会出错failed to push some refs to git  出现错误的主要原因是github中的README.md文件不在本地代码目录中，可以通过如下命令进行代码合并 因为GITHUB建库的时候初始化了README.md</span>
+
+git pull --rebase origin master
+git push -u origin master
+
+<span class="comment">#B computer 换电脑都有重新配置hexo 部署环境 注意主题可能需要重新按 因为github pull下来是空文件 可能命令不规范导致</span>
+git <span class="built_in">clone</span> git@github.com:lorybaby/hexo.git
+<span class="comment">#最方便的办法 是直接用U盘把hexo 拷贝到其它电脑 前提是其它电脑已经配置好hexo</span>
+<span class="built_in">cd</span> blog
+npm install -g hexo-cli
+npm install hexo-deployer-git --save
+<span class="comment">#最方便的办法 是直接用U盘把hexo 拷贝到其它电脑 前提是其它电脑已经配置好hexo 则hexo在blog目录下</span>
+<span class="comment">#如果不是第一次则</span>
+git pull
+<span class="comment">#写博客</span>
+hexo g <span class="_">-d</span>
+git add .
+git commit -m <span class="string">"B lapnews"</span>
+git push -u origin master
+
+
+<span class="comment">#git pull --rebase origin master 报错则</span>
+git status
+git pull --rebase origin master
+</code></pre>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[ubuntu on x99+ gtx980 nvidia]]></title>
+      <url>http://lorybaby.github.io/2016/05/01/ubuntu-on-x99-gtx980-nvidia/</url>
+      <content type="html"><![CDATA[<p>小型工作站无HDI显示时，输入信号超出频率范围的解决方式:<br>安装ubuntu 开始过程显示不正常 F6 字符串– 前加入 nomodeset ，进入安装过程<br>准备按cuda_tookit安装包对应显卡型号，以及对应的最新显卡驱动，<br>安装完成后nvidia-settings 输入终端里 可以修改让显卡GPU0来承担显示功能，调整合适的分辨率，显示器也调整，ubuntu系统里显示也调整合适屏幕分辨率</p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>
