@@ -73,7 +73,7 @@
 <h2 id="amber-pmemd-cuda-MPI"><a href="#amber-pmemd-cuda-MPI" class="headerlink" title="amber pmemd.cuda.MPI"></a>amber pmemd.cuda.MPI</h2><blockquote>
 <p>mpirun -np 3 pmemd.cuda.MPI<br><strong><em>top 发现 本来应该是3cuda个线程  结果出现了6个</em></strong> 此时要果断kill 并重启工作站，否则amber 一直重运行覆盖同一 equ2.out</p>
 </blockquote>
-<p><img src="images\2016\05\amber_mpiruncuda_preoblem.png" alt="equ2.out"></p>
+<p><img src="/images/2016/05/amber_mpiruncuda_preoblem.png" alt="equ2.out"></p>
 <p><strong>注意NSTEP = 86000 到2492000 中间全是缺失值，直到3个小时后equ2.out计算出来运行时间，接着有马上算NSTEP = 87000再算到头</strong><br><strong>相当于补全NULL,但也会重算覆盖2492000后面的，算完后又重新从0开始计算equ2.out 陷入了无限重复。</strong></p>
 ]]></content>
     </entry>
