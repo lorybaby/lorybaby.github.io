@@ -66,7 +66,10 @@
       <title><![CDATA[amber skills notices]]></title>
       <url>http://lorybaby.github.io/2016/05/26/amber/</url>
       <content type="html"><![CDATA[<h2 id="AMBER-会重给PDB编号"><a href="#AMBER-会重给PDB编号" class="headerlink" title="AMBER 会重给PDB编号"></a>AMBER 会重给PDB编号</h2><p>1.amber有 它命名的规则，都是重1开始增加无论单链or多链，而且AB链也不会有相同的number<br>amber 和sdg联用可以确保启始构象达到最合理化，sdg  prep Wiz 可以帮助检测原子的键数是否正确，有没有gap等等。<br>值得注意的是 sdg 默认loop建模并不一定合理，可以再次prep Wiz 检测 原子重叠情况越多越不合理。<br>2.tleap 保存 pdb时 即使水分子本来排序在B链之前，保存后所有的水分子 离子等都会排序在AA后面，所以加限制时一定要搞清number,<br>这也许是amber 自有的命名规则导致的缺陷。</p>
-<h2 id="AMBER-改in文件"><a href="#AMBER-改in文件" class="headerlink" title="AMBER 改in文件"></a>AMBER 改in文件</h2><p>1.通常不同.in文件有同样的参数，比如同样的限制标记符号 ntr=1, restraintmask=’:1-346’, 需要改成 ‘:1-368’<br>命令： sed -i “s/:1-346/:1-368/g” <code>grep :1-346 -rl ./in</code></p>
+<h2 id="AMBER-改in文件"><a href="#AMBER-改in文件" class="headerlink" title="AMBER 改in文件"></a>AMBER 改in文件</h2><p>1.通常不同.in文件有同样的参数，比如同样的限制标记符号 ntr=1, restraintmask=’:1-346’, 需要改成 ‘:1-368’</p>
+<blockquote>
+<p>命令： sed -i “s/:1-346/:1-368/g”  <code>grep :1-346 -rl ./in</code></p>
+</blockquote>
 <p>比如，要将目录in下面所有文件中的zhangsan都修改成lisi，向上那样<br>替换：s命令<br>     $ sed ‘s/test/mytest/g’ example—–在整行范围内把test替换为mytest。如果没有g标记，则只有每行第一个匹配的test被替换成mytest。<br>     -i 表示inplace edit，就地修改文件<br>-r 表示搜索子目录<br>-l 表示输出匹配的文件名<br>这个命令组合很强大，要注意备份文件。</p>
 <h2 id="用高斯计算电荷单点能"><a href="#用高斯计算电荷单点能" class="headerlink" title="用高斯计算电荷单点能"></a>用高斯计算电荷单点能</h2><p>如果小分子配体.pdb 中有原子如H4’ ，C2’, 高斯会生成.com中的原子对应加 H4d , C2P 等 目前还不知道含义是什么？<br>由于是带负点的配体  高斯计算点电荷并不方便 关键字可能需要更改 基组也许要更改<br>FE2+  键联和非键联模式区别还是比较大的  非键联的 可能让HIS质子化错误</p>
 <p>多次能量最小化还是没成 可能结构有问题  pymol看了下都散架了，后来找到原因，其实构象的中小分子都是<strong>虚原子导致</strong>，<br>tleap中把受体和配体分开来准备然和在combine.</p>
