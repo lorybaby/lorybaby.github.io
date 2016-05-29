@@ -4,6 +4,22 @@
   
     
     <entry>
+      <title><![CDATA[STING 自免疫疾病蛋白调节受体]]></title>
+      <url>http://lorybaby.github.io/2016/05/29/STING_preSCI/</url>
+      <content type="html"><![CDATA[<p>STING 寻找其始构象，构建突变构象<br>cytosolic C-terminal domain (CTD)  CTD 在细胞质中<br>origin 分析数据</p>
+<p>PDB</p>
+<blockquote>
+<p>4LOH:A|PDBID|CHAIN|SEQUENCE<br>SVAHGLAWSYYIGYLRLILPELQARIRTYNQHYNNLLRGAVSQRLYILLPLDCGVPDNLSMADPNIRFLDKLPQQTGDHAGIKDRVY<br>SNSIYELLENGQRAGTCVLEYATPLQTLFAMSQYSQAGFSREDRLEQAKLFCRTLEDILADAPESQNNCRLIAYQEPADDSSFSLSQEVLRHLRQEEKEEV<br>4LOH:B|PDBID|CHAIN|SEQUENCE<br>SVAHGLAWSYYIGYLRLILPELQARIRTYNQHYNNLLRGAVSQRLYILLPLDCGVPDNLSMADPNIRFLDKLPQQTGDHAGIKDRVY<br>SNSIYELLENGQRAGTCVLEYATPLQTLFAMSQYSQAGFSREDRLEQAKLFCRTLEDILADAPESQNNCRLIAYQEPADDSSFSLSQEVLRHLRQEEKEEV</p>
+<p>#建模序列154V变体保留 152<br>4LOH:A|PDBID|CHAIN|SEQUENCE<br>NFSVAHGLAWSYYIGYLRLILPELQARIRTYNQHYNNLLRGAVSQRLYILLPLDCGVPDNLSMADPNIRFLDKLPQQTGDHAGIKDRVY<br>SNSIYELLENGQRAGTCVLEYATPLQTLFAMSQYSQAGFSREDRLEQAKLFCRTLEDILADAPESQNNCRLIAYQEPADDSSFSLSQEVLRHLRQEEKEEV<br>4LOH:B|PDBID|CHAIN|SEQUENCE<br>NFSVAHGLAWSYYIGYLRLILPELQARIRTYNQHYNNLLRGAVSQRLYILLPLDCGVPDNLSMADPNIRFLDKLPQQTGDHAGIKDRVY<br>SNSIYELLENGQRAGTCVLEYATPLQTLFAMSQYSQAGFSREDRLEQAKLFCRTLEDILADAPESQNNCRLIAYQEPADDSSFSLSQEVLRHLRQEEKEEV</p>
+<p>sp|Q86WV6|STING_HUMAN Stimulator of interferon genes protein OS=Homo sapiens GN=TMEM173 PE=1 SV=1<br>MPHSSLHPSIPCPRGHGAQKAALVLLSACLVTLWGLGEPPEHTLRYLVLHLASLQLGLLL<br>NGVCSLAEELRHIHSRYRGSYWRTVRACLGCPLRRGALLLLSIYFYYSLPNAVGPPFTWM<br>LALLGLSQALNILLGLKGLAPAEISAVCEKG     152NFNVAHGLAWSYYIGYLRLILPELQARIR<br>TYNQHYNNLLRGAVSQRLYILLPLDCGVPDNLSMADPNIRFLDKLPQQTGDHAGIKDRVY<br>SNSIYELLENGQRAGTCVLEYATPLQTLFAMSQYSQAGFSREDRLEQAKLFCRTLEDILA<br>DAPESQNNCRLIAYQEPADDSSFSLSQEVLRHLRQEEKEEVTVGSLKTSAVPSTSTMSQE<br>PELLISGMEKPLPLRTDFS</p>
+</blockquote>
+<pre><code>10         20         30         40         50
+</code></pre><p>MPHSSLHPSI PCPRGHGAQK AALVLLSACL VTLWGLGEPP EHTLRYLVLH<br>        60         70         80         90        100<br>LASLQLGLLL NGVCSLAEEL RHIHSRYRGS YWRTVRACLG CPLRRGALLL<br>       110        120        130        140        150<br>LSIYFYYSLP NAVGPPFTWM LALLGLSQAL NILLGLKGLA PAEISAVCEK<br>       160        170        180        190        200<br>GNFNVAHGLA WSYYIGYLRL ILPELQARIR TYNQHYNNLL RGAVSQRLYI<br>       210        220        230        240        250<br>LLPLDCGVPD NLSMADPNIR FLDKLPQQTG DHAGIKDRVY SNSIYELLEN<br>       260        270        280        290        300<br>GQRAGTCVLE YATPLQTLFA MSQYSQAGFS REDRLEQAKL FCRTLEDILA<br>       310        320        330        340        350<br>DAPESQNNCR LIAYQEPADD SSFSLSQEVL RHLRQEEKEE VTVGSLKTSA<br>       360        370<br>VPSTSTMSQE PELLISGMEK PLPLRTDFS        </p>
+<p>137-152<br>KGLAPAEISAVCEKGN</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Cite_SCI]]></title>
       <url>http://lorybaby.github.io/2016/05/28/cite_SCI/</url>
       <content type="html"><![CDATA[<p>#gaosi<br> Cite this work as:<br> Gaussian 09, Revision D.01,<br> M. J. Frisch, G. W. Trucks, H. B. Schlegel, G. E. Scuseria,<br> M. A. Robb, J. R. Cheeseman, G. Scalmani, V. Barone, B. Mennucci,<br> G. A. Petersson, H. Nakatsuji, M. Caricato, X. Li, H. P. Hratchian,<br> A. F. Izmaylov, J. Bloino, G. Zheng, J. L. Sonnenberg, M. Hada,<br> M. Ehara, K. Toyota, R. Fukuda, J. Hasegawa, M. Ishida, T. Nakajima,<br> Y. Honda, O. Kitao, H. Nakai, T. Vreven, J. A. Montgomery, Jr.,<br> J. E. Peralta, F. Ogliaro, M. Bearpark, J. J. Heyd, E. Brothers,<br> K. N. Kudin, V. N. Staroverov, T. Keith, R. Kobayashi, J. Normand,<br> K. Raghavachari, A. Rendell, J. C. Burant, S. S. Iyengar, J. Tomasi,<br> M. Cossi, N. Rega, J. M. Millam, M. Klene, J. E. Knox, J. B. Cross,<br> V. Bakken, C. Adamo, J. Jaramillo, R. Gomperts, R. E. Stratmann,<br> O. Yazyev, A. J. Austin, R. Cammi, C. Pomelli, J. W. Ochterski,<br> R. L. Martin, K. Morokuma, V. G. Zakrzewski, G. A. Voth,<br> P. Salvador, J. J. Dannenberg, S. Dapprich, A. D. Daniels,<br> O. Farkas, J. B. Foresman, J. V. Ortiz, J. Cioslowski,<br> and D. J. Fox, Gaussian, Inc., Wallingford CT, 2013.</p>
@@ -26,7 +42,7 @@
 <p>M-Hexo-Blog <a href="https://github.com/MOxFIVE/M-Hexo-Blog/commits/master" target="_blank" rel="external">Commits</a>; hexo-theme-yelee <a href="https://github.com/MOxFIVE/hexo-theme-yelee/commits/master" target="_blank" rel="external">Commits</a>; <a href="http://moxfive.xyz/2015/08/20/blog-building/" title="个人博客站点建设历程" target="_blank" rel="external">建站日志</a></p>
 </blockquote>
 <p>[1~6] 这些links不会被显性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">### New Features 新特性</span><br><span class="line">| - |            Chs           |                En               |</span><br><span class="line">|:-:|:------------------------:|:-------------------------------:|</span><br><span class="line">| 1 | 嵌入边栏的文章目录       | Flexible table of contents      |</span><br><span class="line">| 2 | 透明化背景，随机背景大图 | Transparent &amp; Random background |</span><br><span class="line">| 3 | 页内跳转按钮             | Scrolling button                |</span><br><span class="line">| 4 | 文章版权等信息显示       | Copyright info.                 |</span><br><span class="line">| 5 | 文章导航切换按钮         | Post navigation button          |</span><br><span class="line">| 6 | 网站计数                 | Site counter                    |</span><br><span class="line">| 7 | 多语言支持                 | i18n, multi-language          |</span><br><span class="line"></span><br><span class="line">表格使用</span><br><span class="line">“```”不指定语言模式 效果类似段落块</span><br></pre></td></tr></table></figure></p>
-<p><code>单独的字体加背景块</code> 用``    <img src="https://github.com/lorybaby/lorybaby.github.io/tree/master/img/test.png" alt="图片"><br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">``` yml bash python hightlight何种语言 </span><br><span class="line">[Hexo-Theme-Yilia][<span class="number">1</span>]</span><br><span class="line">[Hexo-Theme-Yilia](https://github.com/litten/hexo-theme-yilia)</span><br><span class="line">[<span class="number">1</span>]: https://github.com/litten/hexo-theme-yilia</span><br><span class="line">two link forms</span><br><span class="line">![图片](https://github.com/lorybaby/lorybaby.github.io/tree/master/img/test.png)</span><br><span class="line">notice <span class="string">"!"</span> convert to picture not links</span><br></pre></td></tr></table></figure></p>
+<p><code>单独的字体加背景块</code> 用``    <img src="/imamges/test.png" alt="图片"><br><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">``` yml bash python hightlight何种语言 </span><br><span class="line">[Hexo-Theme-Yilia][<span class="number">1</span>]</span><br><span class="line">[Hexo-Theme-Yilia](https://github.com/litten/hexo-theme-yilia)</span><br><span class="line">[<span class="number">1</span>]: https://github.com/litten/hexo-theme-yilia</span><br><span class="line">two link forms</span><br><span class="line">![图片](https://github.com/lorybaby/lorybaby.github.io/tree/master/img/test.png)</span><br><span class="line">notice <span class="string">"!"</span> convert to picture not links</span><br></pre></td></tr></table></figure></p>
 <h2 id="主题更新"><a href="#主题更新" class="headerlink" title="主题更新"></a>主题更新</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">cd themes/yelee</span><br><span class="line">git pull</span><br><span class="line">error: Your local changes to the following files would be overwritten by merge:</span><br><span class="line">        _config.yml</span><br><span class="line">        layout/_partial/footer.ejs</span><br><span class="line">Please, commit your changes or stash them before you can merge.</span><br><span class="line">Aborting</span><br><span class="line"></span><br><span class="line">Commit the change using</span><br><span class="line">git commit -m &quot;My message&quot;</span><br><span class="line">git pull</span><br><span class="line">or 重命名原来的文件 比较pull后差异 在决定添加更改</span><br></pre></td></tr></table></figure>
 <h2 id="hexo-generator-search"><a href="#hexo-generator-search" class="headerlink" title="hexo-generator-search"></a>hexo-generator-search</h2><p>会生成一个 search.xml 文件方便添加搜索功能, <a href="http://hahack.com/codes/local-search-engine-for-hexo/" target="_blank" rel="external"><strong>我尝试并没有成功，后期还需要探索下</strong></a></p>
 <p>Generate search data for Hexo 3.0. This plugin is used for generating a search.xml file, which contains all the neccessary data of your articles that you can use to write a local search engine for your blog.</p>
@@ -37,22 +53,23 @@
     </entry>
     
     <entry>
-      <title><![CDATA[amber skills notices]]></title>
-      <url>http://lorybaby.github.io/2016/05/26/amber/</url>
-      <content type="html"><![CDATA[<h2 id="AMBER-会重给PDB编号"><a href="#AMBER-会重给PDB编号" class="headerlink" title="AMBER 会重给PDB编号"></a>AMBER 会重给PDB编号</h2><p>1.amber有 它命名的规则，都是重1开始增加无论单链or多链，而且AB链也不会有相同的number<br>amber 和sdg联用可以确保启始构象达到最合理化，sdg  prep Wiz 可以帮助检测原子的键数是否正确，有没有gap等等。<br>值得注意的是 sdg 默认loop建模并不一定合理，可以再次prep Wiz 检测 原子重叠情况越多越不合理。<br>2.tleap 保存 pdb时 即使水分子本来排序在B链之前，保存后所有的水分子 离子等都会排序在AA后面，所以加限制时一定要搞清number,<br>这也许是amber 自有的命名规则导致的缺陷。</p>
-<h2 id="AMBER-改in文件"><a href="#AMBER-改in文件" class="headerlink" title="AMBER 改in文件"></a>AMBER 改in文件</h2><p>1.通常不同.in文件有同样的参数，比如同样的限制标记符号 ntr=1, restraintmask=’:1-346’, 需要改成 ‘:1-368’<br>命令： sed -i “s/:1-346/:1-368/g” <code>grep :1-346 -rl ./in</code></p>
-<p>比如，要将目录in下面所有文件中的zhangsan都修改成lisi，向上那样<br>替换：s命令<br>     $ sed ‘s/test/mytest/g’ example—–在整行范围内把test替换为mytest。如果没有g标记，则只有每行第一个匹配的test被替换成mytest。<br>     -i 表示inplace edit，就地修改文件<br>-r 表示搜索子目录<br>-l 表示输出匹配的文件名<br>这个命令组合很强大，要注意备份文件。</p>
-<h2 id="用高斯计算电荷单点能"><a href="#用高斯计算电荷单点能" class="headerlink" title="用高斯计算电荷单点能"></a>用高斯计算电荷单点能</h2><p>如果小分子配体.pdb 中有原子如H4’ ，C2’, 高斯会生成.com中的原子对应加 H4d , C2P 等 目前还不知道含义是什么？</p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[built protien model and amber MD]]></title>
       <url>http://lorybaby.github.io/2016/05/26/protien_model/</url>
       <content type="html"><![CDATA[<h2 id="license-MODELIRANJE"><a href="#license-MODELIRANJE" class="headerlink" title="license MODELIRANJE"></a>license MODELIRANJE</h2><p>需要注意的是easymodel 要求modeller 安装到默认目录c:\Program Files<br>若是linux版本 使用命令mod9.16</p>
 <h2 id="sdg"><a href="#sdg" class="headerlink" title="sdg"></a>sdg</h2><p>modeller 免费但是用起来需要有python常识，不是很友好，如果有薛定谔那就很方便了，<br>sdg–同源建模–predict structure</p>
 <h2 id="在晶体结构基础上修复N段缺失部分"><a href="#在晶体结构基础上修复N段缺失部分" class="headerlink" title="在晶体结构基础上修复N段缺失部分"></a>在晶体结构基础上修复N段缺失部分</h2><p>1.AB链对称，需要在AB的N两末端都加几个氨基酸，我的做法是AB链分别建模然后合并。—-更简单是选择Multi-template model type: Homo-multimer<br>这样同一目标序列（query sequnce on every template simultaneously)更具模板的空间坐标同时建模。</p>
 <h2 id="2-同一条链由不同模板构成"><a href="#2-同一条链由不同模板构成" class="headerlink" title="2.同一条链由不同模板构成"></a>2.同一条链由不同模板构成</h2><p>  同上Multi-template model type: Composite/Chimera 鼠标选择要选的序列。<br>其实完全可以用重建模的方式突变or添加AA，以原晶体结构为模板，将更改的原序列为目标序列建模。</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[amber skills notices]]></title>
+      <url>http://lorybaby.github.io/2016/05/26/amber/</url>
+      <content type="html"><![CDATA[<h2 id="AMBER-会重给PDB编号"><a href="#AMBER-会重给PDB编号" class="headerlink" title="AMBER 会重给PDB编号"></a>AMBER 会重给PDB编号</h2><p>1.amber有 它命名的规则，都是重1开始增加无论单链or多链，而且AB链也不会有相同的number<br>amber 和sdg联用可以确保启始构象达到最合理化，sdg  prep Wiz 可以帮助检测原子的键数是否正确，有没有gap等等。<br>值得注意的是 sdg 默认loop建模并不一定合理，可以再次prep Wiz 检测 原子重叠情况越多越不合理。<br>2.tleap 保存 pdb时 即使水分子本来排序在B链之前，保存后所有的水分子 离子等都会排序在AA后面，所以加限制时一定要搞清number,<br>这也许是amber 自有的命名规则导致的缺陷。</p>
+<h2 id="AMBER-改in文件"><a href="#AMBER-改in文件" class="headerlink" title="AMBER 改in文件"></a>AMBER 改in文件</h2><p>1.通常不同.in文件有同样的参数，比如同样的限制标记符号 ntr=1, restraintmask=’:1-346’, 需要改成 ‘:1-368’<br>命令： sed -i “s/:1-346/:1-368/g” <code>grep :1-346 -rl ./in</code></p>
+<p>比如，要将目录in下面所有文件中的zhangsan都修改成lisi，向上那样<br>替换：s命令<br>     $ sed ‘s/test/mytest/g’ example—–在整行范围内把test替换为mytest。如果没有g标记，则只有每行第一个匹配的test被替换成mytest。<br>     -i 表示inplace edit，就地修改文件<br>-r 表示搜索子目录<br>-l 表示输出匹配的文件名<br>这个命令组合很强大，要注意备份文件。</p>
+<h2 id="用高斯计算电荷单点能"><a href="#用高斯计算电荷单点能" class="headerlink" title="用高斯计算电荷单点能"></a>用高斯计算电荷单点能</h2><p>如果小分子配体.pdb 中有原子如H4’ ，C2’, 高斯会生成.com中的原子对应加 H4d , C2P 等 目前还不知道含义是什么？<br>由于是带负点的配体  高斯计算点电荷并不方便 关键字可能需要更改 基组也许要更改<br>FE2+  键联和非键联模式区别还是比较大的  非键联的 可能让HIS质子化错误</p>
+<p>多次能量最小化还是没成 可能结构有问题  pymol看了下都散架了，后来找到原因，其实构象的中小分子都是<strong>虚原子导致</strong>，<br>tleap中把受体和配体分开来准备然和在combine.</p>
 ]]></content>
     </entry>
     
@@ -82,6 +99,9 @@
       <title><![CDATA[sdg skills]]></title>
       <url>http://lorybaby.github.io/2016/05/19/sdg_skill/</url>
       <content type="html"><![CDATA[<h2 id="shrodinger"><a href="#shrodinger" class="headerlink" title="shrodinger"></a>shrodinger</h2><p>Apply–&gt;settings—&gt;change want style then —click Apply<br>sdg 可视化并不能将整个蛋白surface 应为其grid空间限制了大小 maximum=grid size<br>Van der Waals</p>
+<ol>
+<li>command line 启动SDG working dir  coustom dir 取决于 command line dir</li>
+</ol>
 ]]></content>
     </entry>
     
