@@ -4,6 +4,76 @@
   
     
     <entry>
+      <title><![CDATA[VMD skills]]></title>
+      <url>http://lorybaby.github.io/2016/06/05/VMD/</url>
+      <content type="html"><![CDATA[<h2 id="display-multi-frames"><a href="#display-multi-frames" class="headerlink" title="display multi_frames"></a>display multi_frames</h2><blockquote>
+<p>tractj tab —    0:2:40  —- PLAY</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[R skills]]></title>
+      <url>http://lorybaby.github.io/2016/06/04/R_skills/</url>
+      <content type="html"><![CDATA[<p>lowess()</p>
+<blockquote>
+<p>locally weighted scatterplot smoothing，LOWESS或LOESS）是查看二维变量之间关系的一种有力工具。<br>OWESS主要思想是取一定比例的局部数据，在这部分子集中拟合多项式回归曲线，这样我们便可以观察到数据在局部展现出来的规律和趋势；而通常的回归分析往往是根据全体数据建模，这样可以描述整体趋势，但现实生活中规律不总是（或者很少是）教科书上告诉我们的一条直线。我们将局部范围从左往右依次推进，最终一条连续的曲线就被计算出来了。显然，曲线的光滑程度与我们选取数据比例有关：比例越少，拟合越不光滑（因为过于看重局部性质），反之越光滑</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[amber用14GPU跑完轨迹然后用16分析]]></title>
+      <url>http://lorybaby.github.io/2016/06/02/amber_install/</url>
+      <content type="html"><![CDATA[<h1 id="安装amber14-amber14tools-和ambertools16-分开"><a href="#安装amber14-amber14tools-和ambertools16-分开" class="headerlink" title="安装amber14 amber14tools 和ambertools16 分开"></a>安装amber14 amber14tools 和ambertools16 分开</h1><p><strong> amber14 破解版和官方ambetools16 安装，tools16与python结合的更紧密数据分析<br>更加容易，为利用这特点。</strong></p>
+<blockquote>
+<p>但是并不能升级使用，没有版权,而且14 16不兼容，不能使用GPU加速，只使用amber16Tools。<br>单是这没有多大关系，可以用14GPU跑完轨迹然后用16分析<br>例如使用amber14/pmemd.cuda  然后使用amber16/bin/cpptraj分析</p>
+</blockquote>
+<h2 id="python-与amber"><a href="#python-与amber" class="headerlink" title="python 与amber"></a>python 与amber</h2><blockquote>
+<p>2个联系越来越紧密，amber还提供安装自己的python,本来以及安装多个python了，所以可以直接在amber.sh里将<br>PYTHONPATH=your/local/python2.7/site-packages</p>
+</blockquote>
+<p>##MMPBSA.py.MPI</p>
+<blockquote>
+<p>本来并行版应该随着编译amber并行安装好，如果没有说明mpi4py 并没有安装成功，先pip install mpi4py 然后在 cd mmpbsa   python setup.py install<br>并不能安装MMpbsa.py.MPI 只能再次编译并行版amber   ./configure -mpi gnu</p>
+</blockquote>
+<p><strong>开始安装前确保mpi4py已经可以pyhon</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">**需要说明的是 如果有更新不更 脚本是不能连续运行下去的。所以必须更新**</span><br><span class="line"><span class="built_in">export</span> PATH=/home/lory/amber14/bin:<span class="variable">$PATH</span></span><br><span class="line"><span class="built_in">source</span> /home/lory/amber16/amber.sh</span><br></pre></td></tr></table></figure>
+<pre><code class="bash">./configure gnu
+<span class="built_in">source</span> amber.sh
+make install
+
+
+./configure -cuda gnu
+<span class="built_in">source</span> amber.sh
+make install
+<span class="built_in">echo</span> <span class="string">"singal had been done let's do par_install"</span>
+<span class="comment">##para use the newst openmpi-1.10.2,extract and change the name to 1.8 for amber</span>
+<span class="comment">#ask the 1.8 the go on for next para</span>
+<span class="built_in">cd</span> <span class="variable">$AMBERHOME</span>/AmberTools/src
+./configure_mpich gnu
+
+
+<span class="built_in">cd</span> <span class="variable">$AMBERHOME</span>
+./configure -mpi gnu
+<span class="built_in">source</span> amber.sh
+make install
+
+./configure -cuda -mpi gnu
+<span class="built_in">source</span> /home/lory/pro/amber16/amber.sh
+
+make install
+<span class="built_in">echo</span> <span class="string">"paral has been done"</span>
+
+
+<span class="comment">#NAB and Cpptraj can also be compiled using OpenMP</span>
+./configure -openmp gnu
+<span class="built_in">source</span> /home/lory/pro/amber16/amber.sh
+make openmp
+</code></pre>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[STING 自免疫疾病蛋白调节受体]]></title>
       <url>http://lorybaby.github.io/2016/05/29/STING_preSCI/</url>
       <content type="html"><![CDATA[<p>STING 寻找其始构象，构建突变构象<br>cytosolic C-terminal domain (CTD)  CTD 在细胞质中<br>origin 分析数据</p>
@@ -16,6 +86,15 @@
 <pre><code>10         20         30         40         50
 </code></pre><p>MPHSSLHPSI PCPRGHGAQK AALVLLSACL VTLWGLGEPP EHTLRYLVLH<br>        60         70         80         90        100<br>LASLQLGLLL NGVCSLAEEL RHIHSRYRGS YWRTVRACLG CPLRRGALLL<br>       110        120        130        140        150<br>LSIYFYYSLP NAVGPPFTWM LALLGLSQAL NILLGLKGLA PAEISAVCEK<br>       160        170        180        190        200<br>GNFNVAHGLA WSYYIGYLRL ILPELQARIR TYNQHYNNLL RGAVSQRLYI<br>       210        220        230        240        250<br>LLPLDCGVPD NLSMADPNIR FLDKLPQQTG DHAGIKDRVY SNSIYELLEN<br>       260        270        280        290        300<br>GQRAGTCVLE YATPLQTLFA MSQYSQAGFS REDRLEQAKL FCRTLEDILA<br>       310        320        330        340        350<br>DAPESQNNCR LIAYQEPADD SSFSLSQEVL RHLRQEEKEE VTVGSLKTSA<br>       360        370<br>VPSTSTMSQE PELLISGMEK PLPLRTDFS        </p>
 <p>137-152<br>KGLAPAEISAVCEKGN</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[sublime config and skills]]></title>
+      <url>http://lorybaby.github.io/2016/05/28/subl_skills/</url>
+      <content type="html"><![CDATA[<h1 id="my-user-configure"><a href="#my-user-configure" class="headerlink" title="my user configure"></a>my user configure</h1><blockquote>
+<p>{<br>    “color_scheme”: “Packages/Monokai Extended/Monokai Extended.tmTheme”,        //在code color config<br>    “theme”: “Seti.sublime-theme”,                 //这与个UI颜色配置  要先要先安装Seti_ui , ubuntu如果字小，perference—browse pacages—Seti_ui—Seti.sublime-theme change the 对应class label font.size  loryUbunt 17<br>    “contrasted_light_quick_panel”: true,<br>    “contrasted_light_sidebar”: true,<br>    “contrasted_light_tabs”: true,<br>    “draw_white_space”: “all”,<br>    “font_size”: 11,<br>    “ignored_packages”:<br>    [<br>        “Vintage”<br>    ],<br>    “spell_check”: true,<br>    “translate_tabs_to_spaces”: true,<br>    “word_wrap”: true<br>}</p>
+</blockquote>
 ]]></content>
     </entry>
     
@@ -53,16 +132,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[built protien model and amber MD]]></title>
-      <url>http://lorybaby.github.io/2016/05/26/protien_model/</url>
-      <content type="html"><![CDATA[<h2 id="license-MODELIRANJE"><a href="#license-MODELIRANJE" class="headerlink" title="license MODELIRANJE"></a>license MODELIRANJE</h2><p>需要注意的是easymodel 要求modeller 安装到默认目录c:\Program Files<br>若是linux版本 使用命令mod9.16</p>
-<h2 id="sdg"><a href="#sdg" class="headerlink" title="sdg"></a>sdg</h2><p>modeller 免费但是用起来需要有python常识，不是很友好，如果有薛定谔那就很方便了，<br>sdg–同源建模–predict structure</p>
-<h2 id="在晶体结构基础上修复N段缺失部分"><a href="#在晶体结构基础上修复N段缺失部分" class="headerlink" title="在晶体结构基础上修复N段缺失部分"></a>在晶体结构基础上修复N段缺失部分</h2><p>1.AB链对称，需要在AB的N两末端都加几个氨基酸，我的做法是AB链分别建模然后合并。—-更简单是选择Multi-template model type: Homo-multimer<br>这样同一目标序列（query sequnce on every template simultaneously)更具模板的空间坐标同时建模。</p>
-<h2 id="2-同一条链由不同模板构成"><a href="#2-同一条链由不同模板构成" class="headerlink" title="2.同一条链由不同模板构成"></a>2.同一条链由不同模板构成</h2><p>  同上Multi-template model type: Composite/Chimera 鼠标选择要选的序列。<br>其实完全可以用重建模的方式突变or添加AA，以原晶体结构为模板，将更改的原序列为目标序列建模。</p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[amber skills notices]]></title>
       <url>http://lorybaby.github.io/2016/05/26/amber/</url>
       <content type="html"><![CDATA[<h2 id="AMBER-会重给PDB编号"><a href="#AMBER-会重给PDB编号" class="headerlink" title="AMBER 会重给PDB编号"></a>AMBER 会重给PDB编号</h2><p>1.amber有 它命名的规则，都是重1开始增加无论单链or多链，而且AB链也不会有相同的number<br>amber 和sdg联用可以确保启始构象达到最合理化，sdg  prep Wiz 可以帮助检测原子的键数是否正确，有没有gap等等。<br>值得注意的是 sdg 默认loop建模并不一定合理，可以再次prep Wiz 检测 原子重叠情况越多越不合理。<br>2.tleap 保存 pdb时 即使水分子本来排序在B链之前，保存后所有的水分子 离子等都会排序在AA后面，所以加限制时一定要搞清number,<br>这也许是amber 自有的命名规则导致的缺陷。</p>
@@ -78,19 +147,41 @@
 </blockquote>
 <p><img src="/images/2016/05/amber_mpiruncuda_preoblem.png" alt="equ2.out"></p>
 <p><strong>注意NSTEP = 86000 到2492000 中间全是缺失值，直到3个小时后equ2.out计算出来运行时间，接着有马上算NSTEP = 87000再算到头</strong><br><strong>相当于补全NULL,但也会重算覆盖2492000后面的，算完后又重新从0开始计算equ2.out 陷入了无限重复。</strong></p>
+<blockquote>
+<p>算自由能还要准备 各种.prmtop com_wat. nowat: lig. rec. com_gb.</p>
+</blockquote>
+<h3 id="MMPBSA-py-for-能量计算"><a href="#MMPBSA-py-for-能量计算" class="headerlink" title="MMPBSA.py for 能量计算"></a>MMPBSA.py for 能量计算</h3><blockquote>
+<p>radiopt : to choose a cavity radii set<br>  option to set up  atomic radii and charges for PB calculation<br>  istrng  : ionic strength(in mM) for teh PB equation<br>  (epsin)indi   : dielectic constant of solute   1.0<br>  (epsout)exdi  : implicit solvent diectric constant 80</p>
+</blockquote>
+<p>后面3项目可以调整PBSA计算的能量值fit experiment value<br>radiopt = 1 (defualt) 如果默认得到  PB Bomb in pb_aaradi():No radius assigned for atom xx xx<br>change to radiopt=0 in &amp;pb</p>
+<blockquote>
+<p>inp : Nonpolar optimization methond (2)<br>  prbrad solvent probe radius (1.4-1.6 Angstroms, defualt=1.4)</p>
+</blockquote>
+<h2 id="argument-in"><a href="#argument-in" class="headerlink" title="argument .in"></a>argument .in</h2><blockquote>
+<p>nmropt<br>  0 (default) No nmr-type analysis will be done<br>  1 NMR restraints and weight changes will be read<br>  2 NMR restraints, weight changes, NOESY volumes, chemical shifts and residual dipolar restraints</p>
+</blockquote>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[built protien model and amber MD]]></title>
+      <url>http://lorybaby.github.io/2016/05/26/protien_model/</url>
+      <content type="html"><![CDATA[<h2 id="license-MODELIRANJE"><a href="#license-MODELIRANJE" class="headerlink" title="license MODELIRANJE"></a>license MODELIRANJE</h2><p>需要注意的是easymodel 要求modeller 安装到默认目录c:\Program Files<br>若是linux版本 使用命令mod9.16</p>
+<h2 id="sdg"><a href="#sdg" class="headerlink" title="sdg"></a>sdg</h2><p>modeller 免费但是用起来需要有python常识，不是很友好，如果有薛定谔那就很方便了，<br>sdg–同源建模–predict structure</p>
+<h2 id="在晶体结构基础上修复N段缺失部分"><a href="#在晶体结构基础上修复N段缺失部分" class="headerlink" title="在晶体结构基础上修复N段缺失部分"></a>在晶体结构基础上修复N段缺失部分</h2><p>1.AB链对称，需要在AB的N两末端都加几个氨基酸，我的做法是AB链分别建模然后合并。—-更简单是选择Multi-template model type: Homo-multimer<br>这样同一目标序列（query sequnce on every template simultaneously)更具模板的空间坐标同时建模。</p>
+<h2 id="2-同一条链由不同模板构成"><a href="#2-同一条链由不同模板构成" class="headerlink" title="2.同一条链由不同模板构成"></a>2.同一条链由不同模板构成</h2><p>  同上Multi-template model type: Composite/Chimera 鼠标选择要选的序列。<br>其实完全可以用重建模的方式突变or添加AA，以原晶体结构为模板，将更改的原序列为目标序列建模。</p>
 ]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[R,Rstudio install]]></title>
       <url>http://lorybaby.github.io/2016/05/22/R_install_bySource/</url>
-      <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get build-dep r-base</span><br><span class="line">如果不先安装好依赖包将会麻烦不断 比如不能和Rstudio联用 最后不能生成pdf 等</span><br><span class="line">./configure --prefix=<span class="variable">$HOME</span>/R/R-3.3.0 --enable-R-shlib --with-blas --with-lapack</span><br><span class="line">blas  speed up calculations that are common <span class="keyword">in</span> many analytic methods.</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line">sudo ln <span class="_">-s</span> /opt/R/3.2.3/bin/R /bin/R </span><br><span class="line"></span><br><span class="line">Finally, after you have installed R, you might want to check that it was compiled with all your desired capabilities (e.g. png, cairo, tcltk, etc.) with this <span class="built_in">command</span>:</span><br><span class="line"></span><br><span class="line">&gt; capabilities()</span><br></pre></td></tr></table></figure>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[pymol skills]]></title>
-      <url>http://lorybaby.github.io/2016/05/19/pymol_cmd/</url>
-      <content type="html"><![CDATA[<h2 id="pymol-cmd"><a href="#pymol-cmd" class="headerlink" title="pymol cmd"></a>pymol cmd</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">load com.top,mov,format=top      <span class="comment">###pymol要求载入轨迹前要先载入拓扑文件，除非后缀是top，后缀是prmtop的话除非定义一下格式，否则是不认的（不知是不是只有我有这个情况）</span></span><br><span class="line">load_traj head.crd,mov,format=trj   </span><br><span class="line"></span><br><span class="line">mset 1 x60              ;</span><br><span class="line"><span class="comment"># define a movie of 60 frames</span></span><br><span class="line">util.mrock(1,60,60,1,1) ;</span><br><span class="line"><span class="comment"># issues mdo commands to create -/+ 60 deg. rock over 60 frames</span></span><br><span class="line"><span class="built_in">set</span> ray_trace_frames=1  ;</span><br><span class="line"><span class="comment"># whether or not ray each frame （0 - don ray each frame)</span></span><br><span class="line"><span class="built_in">set</span> cache_frames=1      ;</span><br><span class="line"><span class="comment"># whether or not PyMOL saves frames in memory</span></span><br><span class="line">mplay                   ;</span><br><span class="line"><span class="comment"># play the movie</span></span><br><span class="line">mpng mov                ;</span><br><span class="line"><span class="comment"># will create mov0001.png, mov0002.png, ... mov0060.png.</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#pymol </span></span><br><span class="line"><span class="built_in">set</span> ray_shadows,off  <span class="comment"># turn off shadows</span></span><br></pre></td></tr></table></figure>]]></content>
+      <content type="html"><![CDATA[<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get build-dep r-base</span><br><span class="line">如果不先安装好依赖包将会麻烦不断 比如不能和Rstudio联用 最后不能生成pdf 等</span><br><span class="line">./configure --prefix=<span class="variable">$HOME</span>/R/R-3.3.0 --enable-R-shlib --with-blas --with-lapack</span><br><span class="line">blas  speed up calculations that are common <span class="keyword">in</span> many analytic methods.</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br><span class="line">sudo ln <span class="_">-s</span> <span class="variable">$PRO</span>/R/R-3.3.0/bin/R  /bin/R </span><br><span class="line"></span><br><span class="line">Finally, after you have installed R, you might want to check that it was compiled with all your desired capabilities (e.g. png, cairo, tcltk, etc.) with this <span class="built_in">command</span>:</span><br><span class="line">capabilities()</span><br><span class="line"></span><br><span class="line"><span class="built_in">which</span> R</span><br><span class="line">得到默认运行版本R的位置</span><br><span class="line">**直接把<span class="variable">$PRO</span>/R/R-3.3.0/bin/R 复制替换到 /bin/R 里 rstdiudio 启动直接加载新的R**</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>罪恶的重装系统，以前有用的脚本都没了，R安装麻烦而且耗时间 如果在线安装包的化，</p>
+</blockquote>
+<h2 id="Rmarkdown"><a href="#Rmarkdown" class="headerlink" title="Rmarkdown"></a>Rmarkdown</h2><p>这个包可以让R脚本变成html pdf word 等等格式展示</p>
+]]></content>
     </entry>
     
     <entry>
@@ -110,6 +201,15 @@
 <ol>
 <li>command line 启动SDG working dir  coustom dir 取决于 command line dir<br><a href="http://address_of_remote:8888" target="_blank" rel="external">http://address_of_remote:8888</a></li>
 </ol>
+<h3 id="shrodinger-grid-总报错"><a href="#shrodinger-grid-总报错" class="headerlink" title="shrodinger grid 总报错"></a>shrodinger grid 总报错</h3><p>具体原因不详细，<strong>重启程序</strong>解决问题</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[pymol skills]]></title>
+      <url>http://lorybaby.github.io/2016/05/19/pymol_cmd/</url>
+      <content type="html"><![CDATA[<h2 id="pymol-cmd"><a href="#pymol-cmd" class="headerlink" title="pymol cmd"></a>pymol cmd</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">load com.top,mov,format=top      <span class="comment">###pymol要求载入轨迹前要先载入拓扑文件，除非后缀是top，后缀是prmtop的话除非定义一下格式，否则是不认的（不知是不是只有我有这个情况）</span></span><br><span class="line">load_traj head.crd,mov,format=trj   </span><br><span class="line"></span><br><span class="line">mset 1 x60              ;</span><br><span class="line"><span class="comment"># define a movie of 60 frames</span></span><br><span class="line">util.mrock(1,60,60,1,1) ;</span><br><span class="line"><span class="comment"># issues mdo commands to create -/+ 60 deg. rock over 60 frames</span></span><br><span class="line"><span class="built_in">set</span> ray_trace_frames=1  ;</span><br><span class="line"><span class="comment"># whether or not ray each frame （0 - don ray each frame)</span></span><br><span class="line"><span class="built_in">set</span> cache_frames=1      ;</span><br><span class="line"><span class="comment"># whether or not PyMOL saves frames in memory</span></span><br><span class="line">mplay                   ;</span><br><span class="line"><span class="comment"># play the movie</span></span><br><span class="line">mpng mov                ;</span><br><span class="line"><span class="comment"># will create mov0001.png, mov0002.png, ... mov0060.png.</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#pymol </span></span><br><span class="line"><span class="built_in">set</span> ray_shadows,off  <span class="comment"># turn off shadows</span></span><br></pre></td></tr></table></figure>
+<h2 id="pymol-python-路径注意"><a href="#pymol-python-路径注意" class="headerlink" title="pymol python 路径注意"></a>pymol python 路径注意</h2><p><strong> pymol 与python不匹配事 把匹配版的python 而不anaconda版放路径前面</strong></p>
 ]]></content>
     </entry>
     
